@@ -1,0 +1,28 @@
+<h1 class="title">Contact</h1>
+
+<p class="maintext">
+				<table border="0" cellpadding="4" cellspacing="0" align="center">
+			    <tr bgcolor="#FFFFFF">
+                  <td><span class="boldtext">General Support</span></td>
+			      <td colspan="2"><a href="mailto:heather@BetterThanTheBookstore.com">support@BetterThanTheBookstore.com</a></td>
+		        </tr>
+			    <tr bgcolor="#EEEEEE">
+                  <td><span class="boldtext">AIM</span></td>
+			      <td colspan="2"><span class="maintext">General: <a href="aim:goim?screenname=BTTBSupport">BTTBSupport </a><br />
+Technical: <a href="aim:goim?screenname=BTTBTechSupport">BTTBTechSupport</a></span></td>
+		        </tr>
+			    <tr bgcolor="#FFFFFF">
+                  <td><span class="boldtext">MSN</span></td>
+			      <td colspan="2"><a href="mailto:heather@BetterThanTheBookstore.com">support@BetterThanTheBookstore.com</a></td>
+		        </tr>
+			  <tr bgcolor="#FFFFFF">
+			 
+			    <td width="140" colspan="3">   <hr noshade size="1" color="black"></td>
+			  </tr>
+			  
+			  <tr bgcolor="#EEEEEE">
+			    <td><span class="boldtext">CEO</span></td>
+			    <td><span class="maintext">Heather Gorn</span></td><td><a href="mailto:heather@BetterThanTheBookstore.com">Email</a></td></tr>
+			  </table>
+</p>
+

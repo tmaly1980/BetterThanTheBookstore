@@ -1,0 +1,296 @@
+<div class="books view">
+<h2><?php  __('Book');?></h2>
+
+	<div class="bookdetailX">
+		<span class="Xbookcover" style="float: left; width: 300px;">
+			<img src="/books/cover/full/<?= $book['Book']['isbn13'] ?>" width="200">
+		</span>
+		<span class="Xbookinfo" style="float: right; width: 200px;">
+			<div class="infoheader">Product Details:</div>
+			<div class="booktitle"><?= $book['Book']['title'] ?></div>
+			<div class="isbn">ISBN: <?= $book['Book']['isbn13'] ?></div>
+			<div class="edition">Edition: <?= $book['Book']['edition'] ?></div>
+			<div class="publisher">Publisher: <?= $book['Book']['publisher'] ?></div>
+			<div class="pubdate">Pub Date: <?= $book['Book']['pubdate'] ?></div>
+			<div class="bestprice">BTTB Best Price: <?= "$ XX.XX" ?></div>
+		</span>
+	</div>
+
+	<div class="clear"></div>
+
+	<?= $this->element("listings_group", array('condition_id'=>'New')); ?>
+	<?= $this->element("listings_group", array('condition_id'=>'Like New')); ?>
+	<?= $this->element("listings_group", array('condition_id'=>'Very New')); ?>
+	<?= $this->element("listings_group", array('condition_id'=>'Very Good')); ?>
+	<?= $this->element("listings_group", array('condition_id'=>'Good')); ?>
+	<?= $this->element("listings_group", array('condition_id'=>'Acceptable')); ?>
+	<?= $this->element("listings_group", array('condition_id'=>'International')); ?>
+
+	<hr/>
+	<dl><?php $i = 0; $class = ' class="altrow"';?>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Book Id'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['book_id']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Isbn10'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['isbn10']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Isbn13'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['isbn13']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Title'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['title']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Author'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['author']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Format'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['format']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Edition'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['edition']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Pubdate'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['pubdate']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Publisher'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['publisher']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Pages'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['pages']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Image'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['image']; ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Description'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $book['Book']['description']; ?>
+			&nbsp;
+		</dd>
+	</dl>
+</div>
+<div class="actions">
+	<ul>
+		<li><?php echo $html->link(__('Edit Book', true), array('action'=>'edit', $book['Book']['book_id'])); ?> </li>
+		<li><?php echo $html->link(__('Delete Book', true), array('action'=>'delete', $book['Book']['book_id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $book['Book']['book_id'])); ?> </li>
+		<li><?php echo $html->link(__('List Books', true), array('action'=>'index')); ?> </li>
+		<li><?php echo $html->link(__('New Book', true), array('action'=>'add')); ?> </li>
+		<li><?php echo $html->link(__('List Active Listings', true), array('controller'=> 'active_listings', 'action'=>'index')); ?> </li>
+		<li><?php echo $html->link(__('New Active Listing', true), array('controller'=> 'active_listings', 'action'=>'add')); ?> </li>
+		<li><?php echo $html->link(__('List Removed Listings', true), array('controller'=> 'removed_listings', 'action'=>'index')); ?> </li>
+		<li><?php echo $html->link(__('New Removed Listing', true), array('controller'=> 'removed_listings', 'action'=>'add')); ?> </li>
+		<li><?php echo $html->link(__('List Sales', true), array('controller'=> 'sales', 'action'=>'index')); ?> </li>
+		<li><?php echo $html->link(__('New Sale', true), array('controller'=> 'sales', 'action'=>'add')); ?> </li>
+		<li><?php echo $html->link(__('List Sold Listings', true), array('controller'=> 'sold_listings', 'action'=>'index')); ?> </li>
+		<li><?php echo $html->link(__('New Sold Listing', true), array('controller'=> 'sold_listings', 'action'=>'add')); ?> </li>
+	</ul>
+</div>
+<div class="related">
+	<h3><?php __('Related Active Listings');?></h3>
+	<?php if (!empty($book['ActiveListing'])):?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php __('Listing Id'); ?></th>
+		<th><?php __('User Id'); ?></th>
+		<th><?php __('Book Id'); ?></th>
+		<th><?php __('School Id'); ?></th>
+		<th><?php __('Price'); ?></th>
+		<th><?php __('Condition Id'); ?></th>
+		<th><?php __('Comments'); ?></th>
+		<th><?php __('Hold'); ?></th>
+		<th><?php __('Paused'); ?></th>
+		<th class="actions"><?php __('Actions');?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($book['ActiveListing'] as $activeListing):
+			$class = null;
+			if ($i++ % 2 == 0) {
+				$class = ' class="altrow"';
+			}
+		?>
+		<tr<?php echo $class;?>>
+			<td><?php echo $activeListing['listing_id'];?></td>
+			<td><?php echo $activeListing['user_id'];?></td>
+			<td><?php echo $activeListing['book_id'];?></td>
+			<td><?php echo $activeListing['school_id'];?></td>
+			<td><?php echo $activeListing['price'];?></td>
+			<td><?php echo $activeListing['condition_id'];?></td>
+			<td><?php echo $activeListing['comments'];?></td>
+			<td><?php echo $activeListing['hold'];?></td>
+			<td><?php echo $activeListing['paused'];?></td>
+			<td class="actions">
+				<?php echo $html->link(__('View', true), array('controller'=> 'active_listings', 'action'=>'view', $activeListing['listing_id'])); ?>
+				<?php echo $html->link(__('Edit', true), array('controller'=> 'active_listings', 'action'=>'edit', $activeListing['listing_id'])); ?>
+				<?php echo $html->link(__('Delete', true), array('controller'=> 'active_listings', 'action'=>'delete', $activeListing['listing_id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $activeListing['listing_id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $html->link(__('New Active Listing', true), array('controller'=> 'active_listings', 'action'=>'add'));?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php __('Related Removed Listings');?></h3>
+	<?php if (!empty($book['RemovedListing'])):?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php __('Listing Id'); ?></th>
+		<th><?php __('User Id'); ?></th>
+		<th><?php __('Book Id'); ?></th>
+		<th><?php __('School Id'); ?></th>
+		<th><?php __('Price'); ?></th>
+		<th><?php __('Condition Id'); ?></th>
+		<th><?php __('Comments'); ?></th>
+		<th class="actions"><?php __('Actions');?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($book['RemovedListing'] as $removedListing):
+			$class = null;
+			if ($i++ % 2 == 0) {
+				$class = ' class="altrow"';
+			}
+		?>
+		<tr<?php echo $class;?>>
+			<td><?php echo $removedListing['listing_id'];?></td>
+			<td><?php echo $removedListing['user_id'];?></td>
+			<td><?php echo $removedListing['book_id'];?></td>
+			<td><?php echo $removedListing['school_id'];?></td>
+			<td><?php echo $removedListing['price'];?></td>
+			<td><?php echo $removedListing['condition_id'];?></td>
+			<td><?php echo $removedListing['comments'];?></td>
+			<td class="actions">
+				<?php echo $html->link(__('View', true), array('controller'=> 'removed_listings', 'action'=>'view', $removedListing['id'])); ?>
+				<?php echo $html->link(__('Edit', true), array('controller'=> 'removed_listings', 'action'=>'edit', $removedListing['id'])); ?>
+				<?php echo $html->link(__('Delete', true), array('controller'=> 'removed_listings', 'action'=>'delete', $removedListing['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $removedListing['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $html->link(__('New Removed Listing', true), array('controller'=> 'removed_listings', 'action'=>'add'));?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php __('Related Sales');?></h3>
+	<?php if (!empty($book['Sale'])):?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php __('Sale Id'); ?></th>
+		<th><?php __('User Id'); ?></th>
+		<th><?php __('Total'); ?></th>
+		<th><?php __('Time'); ?></th>
+		<th><?php __('Listing Id'); ?></th>
+		<th><?php __('Book Id'); ?></th>
+		<th class="actions"><?php __('Actions');?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($book['Sale'] as $sale):
+			$class = null;
+			if ($i++ % 2 == 0) {
+				$class = ' class="altrow"';
+			}
+		?>
+		<tr<?php echo $class;?>>
+			<td><?php echo $sale['sale_id'];?></td>
+			<td><?php echo $sale['user_id'];?></td>
+			<td><?php echo $sale['total'];?></td>
+			<td><?php echo $sale['time'];?></td>
+			<td><?php echo $sale['listing_id'];?></td>
+			<td><?php echo $sale['book_id'];?></td>
+			<td class="actions">
+				<?php echo $html->link(__('View', true), array('controller'=> 'sales', 'action'=>'view', $sale['sale_id'])); ?>
+				<?php echo $html->link(__('Edit', true), array('controller'=> 'sales', 'action'=>'edit', $sale['sale_id'])); ?>
+				<?php echo $html->link(__('Delete', true), array('controller'=> 'sales', 'action'=>'delete', $sale['sale_id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $sale['sale_id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $html->link(__('New Sale', true), array('controller'=> 'sales', 'action'=>'add'));?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php __('Related Sold Listings');?></h3>
+	<?php if (!empty($book['SoldListing'])):?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php __('Listing Id'); ?></th>
+		<th><?php __('User Id'); ?></th>
+		<th><?php __('Book Id'); ?></th>
+		<th><?php __('School Id'); ?></th>
+		<th><?php __('Price'); ?></th>
+		<th><?php __('Condition Id'); ?></th>
+		<th><?php __('Comments'); ?></th>
+		<th><?php __('Sale Id'); ?></th>
+		<th class="actions"><?php __('Actions');?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($book['SoldListing'] as $soldListing):
+			$class = null;
+			if ($i++ % 2 == 0) {
+				$class = ' class="altrow"';
+			}
+		?>
+		<tr<?php echo $class;?>>
+			<td><?php echo $soldListing['listing_id'];?></td>
+			<td><?php echo $soldListing['user_id'];?></td>
+			<td><?php echo $soldListing['book_id'];?></td>
+			<td><?php echo $soldListing['school_id'];?></td>
+			<td><?php echo $soldListing['price'];?></td>
+			<td><?php echo $soldListing['condition_id'];?></td>
+			<td><?php echo $soldListing['comments'];?></td>
+			<td><?php echo $soldListing['sale_id'];?></td>
+			<td class="actions">
+				<?php echo $html->link(__('View', true), array('controller'=> 'sold_listings', 'action'=>'view', $soldListing['id'])); ?>
+				<?php echo $html->link(__('Edit', true), array('controller'=> 'sold_listings', 'action'=>'edit', $soldListing['id'])); ?>
+				<?php echo $html->link(__('Delete', true), array('controller'=> 'sold_listings', 'action'=>'delete', $soldListing['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $soldListing['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $html->link(__('New Sold Listing', true), array('controller'=> 'sold_listings', 'action'=>'add'));?> </li>
+		</ul>
+	</div>
+</div>

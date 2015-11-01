@@ -1,0 +1,73 @@
+<topteninfo>
+
+	<bookinfo>
+		<coverlocation>album1.jpg</coverlocation>
+		<author>The Doors</author>
+		<title>Greatest Hits</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album2.jpg</coverlocation>
+		<author>The White Stripes</author>
+		<title>Elephant</title>
+		<bookLink>http://www.freelanceswitch.com</bookLink>
+	</bookinfo>
+	
+	<bookinfo>
+		<coverlocation>album3.jpg</coverlocation>
+		<author>Kanye Wests</author>
+		<title>Graduation</title>
+		<bookLink></bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album4.jpg</coverlocation>
+		<author>A Fine Frenzy</author>
+		<title>One Cell In The Sea</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album5.jpg</coverlocation>
+		<author>Amy Winehouse</author>
+		<title>Back to Black</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album6.jpg</coverlocation>
+		<author>The Vines</author>
+		<title>Highly Evolved</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album7.jpg</coverlocation>
+		<author>The Strokes</author>
+		<title>Is This It</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album8.jpg</coverlocation>
+		<author>Yeah Yeah Yeahs</author>
+		<title>Maps - Single</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album9.jpg</coverlocation>
+		<author>DangerDoom</author>
+		<title>The Mouse and the Mask</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+	<bookinfo>
+		<coverlocation>album10.jpg</coverlocation>
+		<author>Fort Minor</author>
+		<title>The Rising Tied</title>
+		<bookLink>http://www.yahoo.com</bookLink>
+	</bookinfo>
+
+</topteninfo>

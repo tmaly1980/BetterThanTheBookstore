@@ -1,0 +1,136 @@
+2	math	mathematics
+3	mktg	marketing
+4	cse	computer
+5	phys	physics
+6	acct	accounting
+8	engl	english
+9	biol	bio
+10	fnce	finance
+11	span	spanish
+12	slav	slavic
+13	stat	statistics
+14	soci	society
+138	AAMW	art & archaeology of the mediterranean
+139	ACCT	accounting
+140	AFST	african studies program
+141	AFRC	africana studies
+142	ALAN	asian languages
+143	ANAT	anatomy
+144	ANCH	ancient history
+145	ANEL	ancient near east languages
+146	ANTH	anthropology
+147	ARAB	arabic
+148	ARCH	architecture
+149	ARTH	art history
+150	ASAM	asian american studies
+151	ASTR	astronomy & astrophysics
+152	BENF	benjamin franklin seminars
+153	BFLW	biochemistry and molecular biophysics
+154	BCHE	biochemistry
+155	BE	bioengineering
+156	BIOE	bioethics (medical ethics)
+157	BIBB	biological basis of behavior
+158	BIOL	biology
+159	BIOM	biomedical studies
+160	BIOT	biotechnology
+161	BSTA	biostatistics
+162	BPUB	business & public policy
+163	CAMB	cell and molecular biology
+164	CBE	chemical & biomolecular engineering
+165	CHEM	chemistry
+166	CHIN	chinese
+167	FILM	cinema studies
+168	CPLN	city & regional planning
+169	CLST	classical studies
+170	COGS	cognitive science studies
+171	COLL	college
+172	COMM	communications
+173	COML	comparative literature & literary theory
+174	CSE	computer science & engineering
+175	CIS	computer and information science (gradua
+176	CIT	computer and information technology
+177	CRIM	criminology
+178	DEMG	demography
+179	DTCH	dutch
+180	EALC	east asia languages & civilizations
+181	ECON	economics
+182	EDUC	education
+183	ESE	electrical & systems engineering
+184	EAS	engineering and applied science
+185	ENGL	english
+186	ENM	engineering mathematics
+187	ENVS	environmental studies
+188	EPID	epidemiology
+189	FNCE	finance
+190	FNAR	fine arts
+191	FOLK	folklore
+192	FREN	french
+193	GAS	graduate arts & sciences
+194	GCB	genomics and computational biology
+195	GRMN	germanic languages
+196	GAFL	government administration
+197	GEOL	geology
+198	GREK	greek
+199	HEBR	hebrew
+200	HSOC	health and societies
+201	HCMG	health care systems
+202	HSPV	historic preservation
+203	HIST	history
+204	HSSC	history and sociology of science
+205	IMUN	immunology
+206	INSC	institute of neurological science
+207	INSR	insurance & risk management
+208	INTR	international relations
+209	ITAL	italian
+210	JPAN	japanese
+211	JWST	jewish studies
+212	KORN	korean
+213	LARP	landscape architecture and regional plan
+214	LATN	latin
+215	LALS	latin american and latino studies
+216	LAW	law
+217	LGST	legal studies & business ethics
+218	LING	linguistics
+219	LGIC	logic, information and computation
+220	MGMT	management
+221	MKTG	marketing
+222	MSE	materials science and engineering
+223	MATH	mathematics
+224	MEAM	mechanical engineering and applied mecha
+225	BIOE	medical ethics
+226	MSCI	military science
+227	MUSC	music
+228	NELC	near eastern languages & civilizations
+229	NSCI	naval science
+230	NURS	nursing
+231	OPIM	operations & information management
+232	PATH	pathology
+233	PERS	persian
+234	PHRM	pharmacology
+235	PHIL	philosophy
+236	PPE	philosophy, politics, and economics
+237	PHYS	physics
+238	PRTG	portuguese
+239	PSCI	political science
+240	PSYC	psychology
+241	PUBH	public health studies
+242	REAL	real estate
+243	RELS	religious studies
+244	ROML	romance languages
+245	RUSS	russian
+246	SCND	scandinavian languages
+247	SLAV	social policy and practice
+248	SOCI	sociology
+249	SAST	south asia studies
+250	SPAN	spanish
+251	STAT	statistics
+252	TCOM	telecommunications
+253	THAR	theater arts
+254	TRAN	transportation
+255	TURK	turkish
+256	UDES	urban design
+257	URBS	urban studies
+258	VLST	visual studies
+259	WSTD	women's studies
+260	Math	calc
+261	Chem	orgo

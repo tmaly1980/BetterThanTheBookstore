@@ -1,0 +1,722 @@
+body {
+	background: url(/img/bkg-blue3.jpg) repeat-x;
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+}
+
+body, th, td, input, textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+
+form {
+}
+
+fieldset {
+}
+
+input, textarea {
+	font-weight: bold;
+	color: #CC0000;
+}
+
+input.text {
+	padding: 2px 5px;
+	background: #F8FAEB;
+	border-top: 1px solid #4D5719;
+	border-left: 1px solid #4D5719;
+	border-right: 1px solid #626456;
+	border-bottom: 1px solid #626456;
+}
+
+input.button {
+	background: #ff0000;
+	border-top: 1px solid #cc0000;
+	border-left: 1px solid #cc0000;
+	border-right: 1px solid #cc0000;
+	border-bottom: 1px solid #cc0000;
+	color: #FFFFFF;
+	background-image: url(/img/nav1.jpg);
+}
+
+h1, h2, h3 {
+	margin-top: 1.5em;
+	color: #0033FF;
+}
+
+h1 {
+	letter-spacing: -.075em;
+	font-size: 3em;
+}
+
+h2 {
+	letter-spacing: -0.05em;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #333333;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+	line-height: 1.8em;
+	font-size: 1.1em;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+a {
+	text-decoration: none;
+	color: #0033FF;
+	font-weight: bold;
+}
+
+a:hover {
+	border: none;
+	color: #000000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+h1 a, h2 a, h3 a {
+	border: none;
+	text-decoration: none;
+	color: #CC0000;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+	background: none;
+	color: #3C7BCF;
+}
+
+hr {
+	display: none;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Header */
+
+#header {
+	width: 720px;
+	height: 110px;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+#menu {
+	float: left;
+	width: 700px;
+	height: 46px;
+	background: url(/img/nav1.jpg) repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font: #ffffff;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	background: url(/img/nav1.jpg) repeat;
+	height: 46px;
+	padding: 0px 1px 0px 1px;
+	margin-left: 5px;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	height: 25px;
+	margin-right: 1px;
+	padding: 10px 20px 0 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#menu a:hover {
+	color: #FF9966;
+	background-image: url(/img/nav2.jpg);
+}
+
+#menu .current_page_item a {
+	color: #FFCC66;
+}
+
+#menu-alt {
+	float: left;
+	width: 700px;
+	height: 46px;
+	background: url(/img/nav1.jpg) repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font: #ffffff;
+}
+
+#menu-alt ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu-alt li {
+	float: left;
+	background: url(/img/nav1.jpg) repeat;
+	height: 46px;
+	padding: 0px 1px 0px 1px;
+	margin-left: 5px;
+}
+
+#menu-alt a {
+	display: block;
+	float: left;
+	height: 25px;
+	margin-right: 1px;
+	padding: 10px 20px 0 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#menu-alt a:hover {
+	color: #FF9966;
+	background-image: url(/img/nav2.jpg);
+}
+
+#menu-alt .current_page_item a {
+	color: #FFCC66;
+}
+
+
+#search {
+	float: right;
+	width: 500px;
+	padding-top: 7px;
+	margin-right: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 1px;
+}
+
+#search fieldset {
+	border: none;
+}
+
+#search #s {
+	width: 200px;
+}
+
+#search #x {
+	width: 90px;
+}
+
+
+/* Logo */
+
+#logo {
+	width: 700px;
+	margin: 0 auto;
+	background: #FFFFFF url(/img/header3.jpg);
+	height: 187px;
+	border: 10px solid #ffffff;
+}
+/* Left sidebar and menu */
+#leftside {
+	clear:left;
+	float:left;
+	margin:0 0 20px;
+	padding:5px;
+	width:115px;
+	background-image: url(/img/bkg-lightblue.jpg);
+}
+#leftside ul.avmenu {list-style:none; margin:0px 0 00px; padding:1px; width:115px;}
+#leftside ul.avmenu li {display:inline; padding:0; width:150px;}
+#leftside h2 {font-size:1.5em; font-weight:400;}
+#leftside p,.announce p {font-size:0.9em;}
+
+
+/* Page */
+
+#page {
+	width: 700px;
+	margin: 0 auto;
+	padding: 0px 0px 0 0px;
+	background: url(/img/bkg-lightblue.jpg) repeat;
+	border: 10px solid #ffffff;
+	border-top: none;
+}
+#page2 {
+	width: 700px;
+	margin: 0 auto;
+	padding: 0px 0px 0 0px;
+	background: url(/img/bkg-main.jpg) repeat;
+	border: 10px solid #ffffff;
+	border-top: none;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 385px;
+	padding: 20px 0px 10px 10px;
+	background-image: url(/img/bkg-main.jpg);
+}
+#contentwide {float: left;
+	width: 420px;
+	padding: 20px 10px 10px 20px;
+	background-image: url(/img/bkg-lightblue.jpg);}
+
+/* Sidebars */
+
+.sidebar {
+	float: right;
+	color: #000000;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	margin-bottom: 2em;
+}
+
+.sidebar li ul {
+}
+
+.sidebar li li {
+	margin: 0;
+}
+
+.sidebar li h2 {
+	margin: 0 0 1em 0;
+}
+
+#sidebar1 {
+}
+
+#sidebar2 {
+	width: 145px;
+	height: 500px;
+	padding: 10px 0 0px 10px;
+	background: url(/img/bkg-medblue.jpg) repeat;
+}
+
+#sidebar2 li h2 {
+	margin: 0 0 0 0;
+	padding: 5px 0 5px 15px;
+	height: 20px;
+	background: url(/img/bkg-medblue.jpg) repeat;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+#sidebar2 li ul {
+	line-height: normal;
+	padding-left: 5px;
+}
+
+/* Footer */
+
+#footer {
+	height: 125px;
+	padding-top: 5px;
+	background-color: #CC0000;
+	background-image: url(/img/bkg-red.jpg);
+	background-repeat: repeat;
+}
+
+#footer p {
+	text-align: center;
+	text-transform: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#footer a {
+	color: #FFCC66;
+}
+#footer hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFCC66;
+	text-decoration: underline;
+}
+.maintext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+}
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-style: normal;
+	line-height: 50px;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: lowercase;
+	color: #CC0000;
+	text-decoration: none;
+	margin-top: 20px;
+}
+
+.boldtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+}
+.sidebartext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	text-transform: none;
+	color: #FFFFFF;
+	letter-spacing: 0.3px;
+}
+.sidebarheader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: lowercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-top: 20px;
+}
+.subhead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #333333;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+.italic {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+}
+.sidebar-alt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: lowercase;
+	color: #FFFF33;
+	text-decoration: none;
+}
+.footertext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.tinytext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+}
+
+.bookdetail
+{
+	width: 500px;
+	height: 300px; /* for pushing item list down... */
+}
+
+.bookcover
+{
+	float: left;
+	width: 300px;
+}
+
+.bookinfo
+{
+	width: 200px;
+	float: right;
+}
+
+
+.clear
+{
+	clear: both;
+}
+
+.listings_group
+{
+	margin-top: 20px;
+	width: 500px;
+	background-color: white;
+}
+
+.listings_group .listing_item
+{
+}
+
+.listing_row_table
+{
+	width: 100%;
+}
+
+.listings_group .listings_group_header
+{
+	background-color: #9999FF;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.listings_group .listing_column_header
+{
+	background-color: #CCC;
+}
+.listings_group .listing_column_header th
+{
+	padding: 3px;
+}
+
+.listing_item th
+{
+}
+
+.listing_item td
+{
+	padding: 5px;
+}
+
+.listing_price
+{
+	white-space: nowrap;
+	text-align: right;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+.listing_compare
+{
+	display: block;
+}
+
+.listing_addtocart
+{
+	display: block;
+}
+
+td, th
+{
+	vertical-align: top;
+}
+
+th
+{
+	text-align: center;
+}
+
+.altrow
+{
+	background-color: #EEE;
+}
+
+.padded
+{
+	padding: 5px;
+}
+
+label
+{
+	display: block;
+	font-weight: bold;
+	padding-right: 20px;
+	padding-bottom: 1px;
+	padding-top: 5px;
+}
+
+.submit
+{
+	padding-top: 10px;
+
+}
+
+.editform td
+{
+	padding: 2px;
+}
+
+.topseller_list
+{
+	width: 525px;
+	height: auto;
+}
+
+.topseller_item
+{
+	width: 115px;
+	float: left;
+	padding: 5px;
+}
+
+.topseller_item .topseller_image
+{
+	display: block;
+}
+
+.topseller_item .topseller_title
+{
+	display: block;
+}
+
+.topseller_item .topseller_author
+{
+	display: block;
+}
+
+.topseller_item .topseller_bestprice
+{
+	display: block;
+	font-weight: bold;
+	color: #FF0000;
+	font-size: 1.1em;
+}
+
+table.list
+{
+}
+
+table.list th
+{
+	
+}
+
+table.list th,td
+{
+	padding: 10px;
+}
+
+div.paging
+{
+}
+
+.book_list
+{
+	width: 515px;
+}
+
+.book_list th, .book_list td
+{
+	vertical-align: top;
+}
+
+.infoheader
+{
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-size: 1.2em;
+}
+
+.rightfloat
+{
+	float: right;
+}
+
+.active_listings_list
+{
+	width: 500px;
+}
+
+.pagelinksbar
+{
+	width: 500px;
+}
+
+.pagelinksbar
+{
+	text-align: right;
+}
+
+.table_header
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: #CCC;
+}
+
+.strike
+{
+	text-decoration: strike-through;
+}
+
+.admin_listings
+{
+	width: 500px;
+}
